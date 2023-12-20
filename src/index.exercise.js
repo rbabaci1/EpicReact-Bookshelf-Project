@@ -14,8 +14,11 @@ function App() {
   const [openModal, setOpenModal] = useState(NONE)
   const close = () => setOpenModal(NONE)
 
-  const handleSubmit = formData => {
+  const login = formData => {
     console.log('login', formData)
+  }
+  const register = formData => {
+    console.log('register', formData)
   }
 
   return (
@@ -38,9 +41,8 @@ function App() {
       >
         <div>
           <button onClick={() => setOpenModal(NONE)}>Close</button>
-
           <h3>Login</h3>
-          <LoginForm onSubmit={handleSubmit} buttonText="Login" />
+          <LoginForm onSubmit={login} buttonText="Login" />
         </div>
       </Dialog>
 
@@ -53,6 +55,7 @@ function App() {
           <button onClick={() => setOpenModal(NONE)}>Close</button>
 
           <h3>Register</h3>
+          <LoginForm onSubmit={register} buttonText="Register" />
         </div>
       </Dialog>
     </div>
