@@ -43,7 +43,7 @@
 ## System Requirements
 
 - [git][git] v2.13 or greater
-- [NodeJS][node] `14 || 16 || 18`
+- [NodeJS][node] `>=16`
 - [npm][npm] v8.16.0 or greater
 
 All of these must be available in your `PATH`. To verify things are set up
@@ -363,6 +363,9 @@ Thanks goes to these wonderful people
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/AngadSethi"><img src="https://avatars.githubusercontent.com/u/58678541?v=4?s=100" width="100px;" alt="Angad Sethi"/><br /><sub><b>Angad Sethi</b></sub></a><br /><a href="https://github.com/kentcdodds/bookshelf/commits?author=AngadSethi" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/marydavis"><img src="https://avatars.githubusercontent.com/u/176437?v=4?s=100" width="100px;" alt="Mary"/><br /><sub><b>Mary</b></sub></a><br /><a href="https://github.com/kentcdodds/bookshelf/commits?author=marydavis" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/DiegoCardoso"><img src="https://avatars.githubusercontent.com/u/262432?v=4?s=100" width="100px;" alt="Diego Cardoso"/><br /><sub><b>Diego Cardoso</b></sub></a><br /><a href="https://github.com/kentcdodds/bookshelf/commits?author=DiegoCardoso" title="Documentation">📖</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/kmccoan"><img src="https://avatars.githubusercontent.com/u/4242047?v=4?s=100" width="100px;" alt="kmccoan"/><br /><sub><b>kmccoan</b></sub></a><br /><a href="https://github.com/kentcdodds/bookshelf/commits?author=kmccoan" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
