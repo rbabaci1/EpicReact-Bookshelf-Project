@@ -14,7 +14,7 @@ function LoginForm({onSubmit, buttonText = ''}) {
 
   const handleSubmit = e => {
     e.preventDefault()
-
+    // for now
     onSubmit(formData)
   }
 
