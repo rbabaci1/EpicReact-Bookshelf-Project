@@ -1,12 +1,12 @@
+/** @jsx jsx */
+import {jsx} from '@emotion/core'
+
 import '@reach/dialog/styles.css'
 import * as React from 'react'
 import {createRoot} from 'react-dom/client'
 import 'bootstrap/dist/css/bootstrap-reboot.css'
-import {jsx} from '@emotion/core'
 
-// 🐨 you'll need to import some new components that you'll be creating
-// in this file
-import {Button, Input, FormGroup} from './components/lib'
+import {Button, Input, FormGroup, Spinner} from './components/lib'
 import {Modal, ModalContents, ModalOpenButton} from './components/modal'
 import {Logo} from './components/logo'
 
@@ -35,18 +35,20 @@ function LoginForm({onSubmit, submitButton}) {
         },
       }}
     >
-      {/* 🐨 these div elements could be a FormGroup you create in components/lib */}
-      {/* 🐨 and the inputs elements could be custom styled Input components too */}
-      <div>
+      <FormGroup>
         <label htmlFor="username">Username</label>
-        <input id="username" />
-      </div>
-      <div>
-        <label htmlFor="password">Password</label>
-        <input id="password" type="password" />
-      </div>
+        <Input id="username" />
+      </FormGroup>
 
-      <div>{React.cloneElement(submitButton, {type: 'submit'})}</div>
+      <FormGroup>
+        <label htmlFor="password">Password</label>
+        <Input id="password" type="password" />
+      </FormGroup>
+
+      <div>
+        {React.cloneElement(submitButton, {type: 'submit'})}
+        <Spinner />
+      </div>
     </form>
   )
 }
@@ -73,14 +75,6 @@ function App() {
     >
       <Logo width="80" height="80" />
       <h1>Bookshelf</h1>
-      {/*
-        🐨 the two buttons are too close, let's space them out
-          🎨 apply this to the div right below
-            display: 'grid',
-            gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
-            gridGap: '0.75rem',
-      */}
-      {/* 🐨 And make sure to use the new Button component for all these buttons */}
       <div
         css={{
           display: 'grid',
