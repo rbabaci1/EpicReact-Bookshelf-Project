@@ -23,6 +23,7 @@ function AuthenticatedApp({user, logout}) {
           Logout
         </Button>
       </div>
+
       <div
         css={{
           margin: '0 auto',
